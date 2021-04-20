@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=chrome">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>To Do lists</title>
 </head>
 <body>
-    <div id="myDIV" class="header">
-        <h2>My To Do List</h2>
-        <input type="text" id="manaIevietosana" placeholder="Ievadīt lietu...">
-        <span onclick="newElement()" class="pievienotPogu">Pievienot</span>
-      </div>
-      
-      <ul id="lietasKurasJaveic">
-      </ul>
-    
+  <div id="myDIV" class="augsa">
+    <h2 type"text" id="Virsraksts">Saraksts ar to kas man ir jāizdara</h2>
+    <input type="text" id="manaIevade" placeholder="Ievadi kas tev ir jāveic...">
+    <input type="date" id="datums" placeholder="Ievadiet termiņu">
+    <span onclick="newElement()" class="pievienotPogu">Add</span>
+  </div>
+  
+  <ul id="myUL">
+  </ul>
+     <script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>

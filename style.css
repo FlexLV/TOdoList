@@ -1,0 +1,103 @@
+
+* {
+    box-sizing: 10px 23px;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: rgb(175, 126, 126);
+    font-size: 18px;
+    transition: 0.2s;
+  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  ul li:hover {
+    background: #ddd;
+  }
+  
+  ul li.checked {
+    background: rgb(0, 0, 0);
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 15px 18px 19px;
+  }
+  
+  .close:hover {
+    background-color: #000000;
+    color: rgb(179, 176, 176);
+  }
+  
+  .augsa {
+    padding: 44px 82px;
+    color: rgb(109, 109, 109);
+    text-align: center;
+    background:url() 10% 10% no-repeat;
+    background-size:cover;
+    background-clip:content-box;
+  }
+  
+  .augsa:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+  
+  .pievienotPogu {
+    padding: 10px;
+    width: 25%;
+    background: #8a8989;
+    color: rgb(160, 158, 158);
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+  .pievienotPogu:hover {
+    background-color: rgb(90, 89, 89);
+  }
+  body {
+    background-color: rgb(171, 172, 194);
+  }
